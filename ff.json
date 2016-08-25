@@ -1,0 +1,114 @@
+[
+  {
+    "key": "updated_at",
+    "value": "2016-08-23 04:52:26 PDT"
+  },
+  {
+    "key": "store_timezone",
+    "value": "America/Los_Angeles"
+  },
+  {
+    "key": "this_year_number",
+    "value": "2016"
+  },
+  {
+    "key": "previous_year_number",
+    "value": "2015"
+  },
+  {
+    "key": "year_ago_this_day",
+    "value": {
+      "item": [
+        {
+          "key": "count",
+          "value": "145"
+        },
+        {
+          "key": "revenue",
+          "value": "5368.32"
+        }
+      ],
+      "xsi:type": "ns2:Map"
+    }
+  },
+  {
+    "key": "year_ago_this_month",
+    "value": {
+      "item": [
+        {
+          "key": "count",
+          "value": "4431"
+        },
+        {
+          "key": "revenue",
+          "value": "194956.9"
+        }
+      ],
+      "xsi:type": "ns2:Map"
+    }
+  },
+  {
+    "key": "year_ago_whole_year",
+    "value": {
+      "item": [
+        {
+          "key": "count",
+          "value": "42759"
+        },
+        {
+          "key": "revenue",
+          "value": "1893687.99"
+        }
+      ],
+      "xsi:type": "ns2:Map"
+    }
+  },
+  {
+    "key": "this_day",
+    "value": {
+      "item": [
+        {
+          "key": "count",
+          "value": "0"
+        },
+        {
+          "key": "revenue",
+          "value": "0"
+        }
+      ],
+      "xsi:type": "ns2:Map"
+    }
+  },
+  {
+    "key": "this_month",
+    "value": {
+      "item": [
+        {
+          "key": "count",
+          "value": "18"
+        },
+        {
+          "key": "revenue",
+          "value": "4257.29"
+        }
+      ],
+      "xsi:type": "ns2:Map"
+    }
+  },
+  {
+    "key": "this_year",
+    "value": {
+      "item": [
+        {
+          "key": "count",
+          "value": "7531"
+        },
+        {
+          "key": "revenue",
+          "value": "323488.13"
+        }
+      ],
+      "xsi:type": "ns2:Map"
+    }
+  }
+]

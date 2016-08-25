@@ -1,0 +1,67 @@
+<ion-view view-title="Main Page" class="main-page">
+  <ion-content>
+    <div class="col orders" ng-if="updated">
+      <div class="row text-center table-row">
+        <div class="header col">Orders Today</div>
+        <div class="header col">Revenue Today</div>
+      </div>
+      <div class="row text-center table-row">
+        <div class="count count-blue col">{{ this_day.item[0].value }}</div>
+        <div class="count count-green col">{{ this_day.item[1].value | currency }}</div>
+      </div>
+    </div>
+
+
+    <div class="col orders orders-year" ng-if="updated">
+      <div class="row table-row">
+        <div class="header col text-left">{{ this_year_number }}</div>
+        <div class="header col text-center">Orders</div>
+        <div class="header col text-center">Revenue</div>
+      </div>
+      <div class="row text-center table-row">
+        <div class="label col text-left">This Month</div>
+        <div class="count count-blue col text-center">{{ this_month.item[0].value }}</div>
+        <div class="count count-green col text-right">{{ this_month.item[1].value | currency }}</div>
+      </div>
+      <div class="row text-right table-row">
+        <div class="label col text-left">This Year</div>
+        <div class="count count-blue col text-center">{{ this_year.item[0].value }}</div>
+        <div class="count count-green col text-right">{{ this_year.item[1].value | currency }}</div>
+      </div>
+    </div>
+
+
+    <div class="col orders orders-year" ng-if="updated">
+      <div class="row table-row">
+        <div class="header col text-left">{{ previous_year_number }}</div>
+        <div class="header col text-center">Orders</div>
+        <div class="header col text-center">Revenue</div>
+      </div>
+      <div class="row table-row">
+        <div class="label col text-left">This Day</div>
+        <div class="count count-blue col text-center">{{ year_ago_this_day.item[0].value }}</div>
+        <div class="count count-green col text-right">{{ year_ago_this_day.item[1].value | currency }}</div>
+      </div>
+      <div class="row text-center table-row">
+        <div class="label col text-left">This Month</div>
+        <div class="count count-blue col text-center">{{ year_ago_this_month.item[0].value }}</div>
+        <div class="count count-green col text-right">{{ year_ago_this_month.item[1].value | currency}}</div>
+      </div>
+      <div class="row text-right table-row">
+        <div class="label col text-left">This Year</div>
+        <div class="count count-blue col text-center">{{ year_ago_whole_year.item[0].value }}</div>
+        <div class="count count-green col text-right">{{ year_ago_whole_year.item[1].value | currency }}</div>
+      </div>
+    </div>
+
+
+  </ion-content>
+
+  <ion-footer-bar class="footer">
+    <button class="button button-icon" ng-click="update()"><i class="icon ion-ios-refresh-empty"></i></button>
+    <div class="col text-center">
+      <h6 ng-if="updated">Updated</h6>
+      <div>{{ updateDate | date : 'dd/MM/yyyy hh:mm a'}}</div>
+    </div>
+  </ion-footer-bar>
+</ion-view>

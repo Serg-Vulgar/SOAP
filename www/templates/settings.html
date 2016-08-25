@@ -1,0 +1,33 @@
+<ion-view view-title="Settings" class="settings-page">
+  <ion-content>
+    <div class="list">
+      <h5 class="padding">Protocol:</h5>
+      <ion-toggle ng-model="protocol" toggle-class="toggle-calm" ng-change="changeProtocol()">
+        <span ng-class="{ 'calm': protocol == false }">HTTP</span>/<span
+        ng-class="{ 'calm':protocol == true }">HTTPS</span></ion-toggle>
+      <h5 class="padding">User:</h5>
+
+      <form novalidate ng-submit="saveSettings(settingsForm)" name="settingsForm">
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">URL</span>
+          <input type="text" placeholder="URL" ng-model="$root.AppSettings.URL" required>
+        </label>
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Username</span>
+          <input type="text" placeholder="Username" ng-model="$root.AppSettings.username" required>
+        </label>
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Password</span>
+          <input type="password" placeholder="Password" ng-model="$root.AppSettings.password" required>
+        </label>
+        <div ng-if="showError" class="item-divider text-center error" ng-cloak>
+          Fill in all the fields
+        </div>
+        <button class="button text-center button-block calm-bg" type="submit">Save settings</button>
+      </form>
+
+    </div>
+
+
+  </ion-content>
+</ion-view>
